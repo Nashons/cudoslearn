@@ -6,14 +6,34 @@ import Layout from '@theme/Layout';
 function ChatInterface() {
     const [messages, setMessages] = useState([]);
     const [chatStarted, setChatStarted] = useState(false);
+    
+    const callChatAPI = async (query) => {
+        try {
+          const response = await fetch('http://localhost:8000/chat', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ query }),
+          });
+      
+          const data = await response.json();
+          return data;
+        } catch (error) {
+          console.error("API call failed:", error);
+          return { text: "Error connecting to the chat server.", user: "bot" };
+        }
+      };
 
-
-    const handleMessageSend = (message) => {
+    const handleMessageSend = async (message) => {
         setChatStarted(true); // set chat to started
         setMessages([...messages, { sender: 'user', content: message }]);
+
         // Here you can add logic to process the message and get a reply from your AI
-        const aiResponse = "Sample AI Response"; // Placeholder
-        setMessages([...messages, { sender: 'user', content: message }, { sender: 'ai', content: aiResponse }]);
+        const aiResponse = await callChatAPI(message)
+        // setMessages([...messages, { sender: 'user', content: message }, { sender: 'ai', content: aiResponse }]);
+        setMessages([...messages, { sender: 'user', content: message }, { sender: 'ai', content: aiResponse.text }]);
+
     }
 
     return (
