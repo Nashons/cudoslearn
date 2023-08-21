@@ -57,7 +57,7 @@ function ChatInterface() {
                 <div className="chat-welcome">
                     Welcome to our AI Chat Assistant!
                     <br />
-                    Start by asking any question related to the documentation.
+                    Start by asking any question related to cudos.
                 </div>
             )}
         </div>

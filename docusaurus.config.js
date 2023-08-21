@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Cudos Learn',
   tagline: 'Master CUDOS: Your Ultimate Resource for Blockchain Development',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cllogo.png',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
@@ -67,7 +67,7 @@ const config = {
         title: 'Cudos Learn',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/cudoslogo.jpg',
+          src: 'img/cllogo3.png',
         },
         items: [
           {
