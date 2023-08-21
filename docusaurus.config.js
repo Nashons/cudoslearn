@@ -62,7 +62,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Cudos Learn',
         logo: {
@@ -70,17 +70,17 @@ const config = {
           src: 'img/cllogo3.png',
         },
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
+          // {
+          //   type: 'docSidebar',
+          //   sidebarId: 'tutorialSidebar',
+          //   position: 'left',
+          //   label: 'Tutorial',
+          // },
           {to: '/blog', label: 'Blog', position: 'left'},
           {to: '/ailearn', label: 'Ask AI', position: 'left'},
 
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/Nashons/cudoslearn',
             label: 'GitHub',
             position: 'right',
           },
@@ -101,17 +101,14 @@ const config = {
           {
             title: 'Community',
             items: [
+           
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Telegram',
+                href: 'https://t.me/+zgXBV1LZoWMzYTlk',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/cudoslearn',
               },
             ],
           },
@@ -124,7 +121,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/Nashons/cudoslearn',
               },
             ],
           },
@@ -132,8 +129,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Cudos learn.`,
       },
       prism: {
-        // theme: lightCodeTheme,
-        theme: darkCodeTheme,
+        theme: lightCodeTheme,
+        // theme: darkCodeTheme,
         darkTheme: darkCodeTheme,
       },
     }),

@@ -73,7 +73,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 const TrackList = [
   {
     title: 'Getting Started with CUDOS',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/cs.svg').default,
     to: 'docs/getting_started_with_cudos',
     description: (
       <>
@@ -83,7 +83,7 @@ const TrackList = [
   },
   {
     title: 'CUDOS Blockchain Development',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/cs.svg').default,
     to: 'docs/cudos_blockchain_development',
     description: (
       <>
@@ -93,7 +93,7 @@ const TrackList = [
   },
   {
     title: 'Harnessing CUDOS Blockchain Compute',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/cs.svg').default,
     to: 'docs/harnessing_cudos_blockchain_compute',
     description: (
       <>
@@ -103,7 +103,7 @@ const TrackList = [
   },
   {
     title: 'Node Operation on CUDOS Network',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/cs.svg').default,
     to: 'docs/node_operation_on_cudos_network',
     description: (
       <>
